@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{book.title}}</h2>
+<h3>{{book.author}}</h3>
+<h4>{{book.genre}}</h4>
+<p>Checked Out:</p>
+    {% if book.checked_out %}
+    <span>&#9989;</span>
+    {% else %}
+    <span>&#10060;</span>
+    {% endif %}
+
+<form action="/books/{{index}}" method="POST">
+    <label for="checked_out">Checked out?</label>
+    <input type="checkbox" name="checked_out" {{"checked" if book.checked_out}}/>
+
+    <input type="Submit" value="Update"/>
+</form>
+
+<form action="/books/delete/{{index}}" method="POST">
+    <input type="Submit" value="Delete"/>
+</form>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+SOLID 
+
+Single Responsibility Principle - fucntion should be responsible for 1 thing onle
+
+Open/Closed Principle - code should be open for expansion but closed to modification
+
+Liskov Substitution Principle - swap out parent class for child class without breaking app
+
+Interface Segregation Principle - interface should be seperated out - responsible for 1 thing - many small interfaces 
+
+Dependency Inversion Principle - 
+
+
+
+4 Pillars of OOP 
+
+Abstraction 
+Encapsulation - properties should remain sealed - protected - decide if writable or not (private/public getter/setter)
+Polymorphism 
+Inheritance 
+
+
+
+
+
+Apply to all OOP languages - Possible interview Q

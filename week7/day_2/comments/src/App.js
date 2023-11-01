@@ -1,0 +1,11 @@
+import logo from './logo.svg';
+import './App.css';
+import CommentBox from './containers/CommentBox';
+
+function App() {
+  return (
+   <CommentBox/>
+  );
+}
+
+export default App;
